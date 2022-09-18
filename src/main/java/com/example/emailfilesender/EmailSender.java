@@ -61,16 +61,12 @@ public class EmailSender {
 
         BodyPart messageBodyPart = new MimeBodyPart();
         messageBodyPart.setText(body);
-
+        MimeBodyPart fileBodyPart = new MimeBodyPart();
+        fileBodyPart.attachFile(file);
 
         Multipart multipart = new MimeMultipart();
         multipart.addBodyPart(messageBodyPart);
-
-
-        MimeBodyPart bodyPart = new MimeBodyPart();
-        bodyPart.attachFile(file);
-        multipart.addBodyPart(bodyPart);
-
+        multipart.addBodyPart(fileBodyPart);
 
         message.setContent(multipart);
 
