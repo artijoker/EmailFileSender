@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+    <context-param>
+        <param-name>host</param-name>
+        <param-value>smtp.mail.ru</param-value>
+    </context-param>
+    <context-param>
+        <param-name>port</param-name>
+        <param-value>25</param-value>
+    </context-param>
+    <context-param>
+        <param-name>user</param-name>
+        <param-value>arti_j0ker@mail.ru</param-value>
+    </context-param>
+    <context-param>
+        <param-name>password</param-name>
+        <param-value>jD6pgpgrk1a1vZdDaaBq</param-value>
+    </context-param>
+</web-app>
